@@ -29,6 +29,7 @@
       mac-option-modifier 'none)
 
 (put 'narrow-to-region 'disabled nil)
+(load-theme 'zenburn t)
 
 ;;Don't like the 80 column thing so overriding the following, but without the ""lines-tail""
 ;; core/prelude-editor.el
@@ -137,7 +138,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;;(set-face-attribute 'default nil)
-(set-face-background 'default      "black")     ; frame background
+;;(set-face-background 'default      "black")     ; frame background
 ;;(set-face-foreground 'default      "navajowhite")      ; normal text
 ;;
 ;;;;(set-face-background 'default      "wheat")     ; frame background
