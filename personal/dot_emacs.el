@@ -335,3 +335,15 @@
 ;;
 ;;(defalias 'putheader (read-kbd-macro
 ;;"ESC < ESC x inser TAB f TAB RET .he TAB RET C-s des C-e RET TAB"))
+
+;;-----------------------------------------------------------------
+;;(face-attribute 'region :background) ;; #2B2B2B
+;;(set-face-background 'region "#3F3F3F")
+
+(with-eval-after-load "zenburn-theme"
+     (zenburn-with-color-variables
+            (custom-theme-set-faces
+                   'zenburn
+                   ;; original `(default ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
+                   `(default ((t (:foreground ,zenburn-fg :background ,zenburn-bg-1))))
+                   (set-face-background 'region zenburn-bg))))
