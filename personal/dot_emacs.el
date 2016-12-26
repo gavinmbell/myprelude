@@ -347,7 +347,7 @@
                    ;; original `(default ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
                    `(default ((t (:foreground ,zenburn-fg :background ,zenburn-bg-1))))
                    (set-face-background 'region zenburn-bg))))
->
+
 
 (defun my-flymd-browser-function (url)
   (let ((process-environment (browse-url-process-environment)))
