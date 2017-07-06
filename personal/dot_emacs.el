@@ -29,6 +29,23 @@
       mac-option-modifier 'none)
 
 (put 'narrow-to-region 'disabled nil)
+
+;; initial window
+(setq initial-frame-alist
+      '(
+        (width . 102)
+        (height . 54)
+        (left . 50)
+        (top . 50)))
+
+(setq default-frame-alist
+      '(
+        (width . 100)
+        (height . 52)
+        (left . 50)
+        (top . 50)))
+
+
 (load-theme 'zenburn t)
 
 ;;Don't like the 80 column thing so overriding the following, but without the ""lines-tail""
@@ -43,6 +60,7 @@
 (define-key helm-map (kbd "C-z")  'helm-select-action) ; list actions using C-z
 
 (global-set-key (kbd "C-<return>") 'company-complete)
+(global-set-key (kbd "M-\`") 'other-frame)
 
 (setq tramp-default-user "${USER}")
 
@@ -357,3 +375,5 @@
            "/usr/bin/open"
            (list "-a" "firefox" url))))
 (setq flymd-browser-open-function 'my-flymd-browser-function)
+(setq mouse-autoselect-window t)
+;;(setq magithub-debug-mode t)

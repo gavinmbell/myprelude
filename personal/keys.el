@@ -92,12 +92,12 @@
 
 (defun scroll-down-in-place (n)
   (interactive "p")
-  (previous-line n)
+  (previous-line (- n 1))
   (scroll-down n))
 
 (defun scroll-up-in-place (n)
   (interactive "p")
-  (next-line n)
+  (next-line (- n 1))
   (scroll-up n))
 
 (defun scroll-down-page-place ()
