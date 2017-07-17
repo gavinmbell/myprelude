@@ -7,13 +7,9 @@ saveplace
 eshell
 elpa
 el-get
-semanticdb
 url
 ede-projects.el
 .DS_Store
-custom.el
-places
-.smex-items
 savefile/
 /prelude-modules.el
 projectile-bookmarks.eld
@@ -23,3 +19,6 @@ tramp
 /var/pcache
 .emacs.desktop
 .emacs.desktop.lock
+emms/
+ac-comphist.dat
+network-security.data
