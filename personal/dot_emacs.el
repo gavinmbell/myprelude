@@ -46,7 +46,8 @@
         (top . 50)))
 
 
-(load-theme 'zenburn t)
+;;(load-theme 'zenburn t)
+(load-theme 'afternoon t)
 
 ;;Don't like the 80 column thing so overriding the following, but without the ""lines-tail""
 ;; core/prelude-editor.el
